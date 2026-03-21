@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.2.3",
+    "justtcg-js": "^0.1.16"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.7.4"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  }
+}
