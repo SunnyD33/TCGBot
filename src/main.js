@@ -63,7 +63,7 @@ client.once(Events.ClientReady, (readyClient) => {
         console.error('Error checking tracked alert:', error);
       }
     }
-  }, 20 * 1000); // 20 seconds for testing, change to 4 * 60 * 60 * 1000 for production
+  }, 4 * 60 * 60 * 1000); // 20 seconds for testing, change to 4 * 60 * 60 * 1000 for production
 });
 
 client.on(Events.InteractionCreate, async (interaction) => {
