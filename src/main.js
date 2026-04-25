@@ -413,9 +413,8 @@ client.on(Events.InteractionCreate, async (interaction) => {
     await interaction.deferReply();
 
     const channelID = interaction.channelId;
-    const channelName = interaction.channel.name;
 
-    const result = storage.muteChannel(channelID, channelName);
+    const result = storage.muteChannel(channelID);
     await interaction.editReply(result.message);
 
     return;
