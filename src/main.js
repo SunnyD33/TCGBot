@@ -433,9 +433,8 @@ client.on(Events.InteractionCreate, async (interaction) => {
     await interaction.deferReply();
 
     const channelID = interaction.channelId;
-    const channelName = interaction.channel.name;
 
-    const result = storage.unmuteChannel(channelID, channelName);
+    const result = storage.unmuteChannel(channelID);
     await interaction.editReply(result.message);
 
     return;
